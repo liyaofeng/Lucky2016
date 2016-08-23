@@ -1,0 +1,39 @@
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+* {
+	font-family: "Microsoft YaHei";
+	font-size: 1.5625vm;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/*背景音乐*/
+#music {
+	position: absolute;
+	z-index: 5;
+	top: 3vh;
+	right: 4vw;
+	width: 15vw;
+	height: 15vw;
+	border-radius: 50%;
+	border: 4px solid #ef1639;
+	background: #fff;
+}
+#music > .music_disc {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 79%;
+	margin: auto;
+}
+#music > .music_pointer {
+	position: absolute;
+	top: 24%;
+	right: 2.5%;
+	width: 28.421%;
+}
