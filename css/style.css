@@ -51,7 +51,9 @@ html, body {
 
 /* page */
 .page {
-	
+	position: relative; 
+	overflow: hidden; 
+	height: 100%;
 }
 .page > .bg {
 	height: 100%;
@@ -59,12 +61,7 @@ html, body {
 
 /* 第一页 */
 #page_1 {
-	display: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	display: block;
 }
 #page_1 > .bg {
 	background: url("../images/p1_bg.jpg");
@@ -137,11 +134,19 @@ html, body {
 /* 第二页 */
 #page_2 {
 	display: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+}
+#page_2.feadout {
+    -webkit-transform: translate(0, -100%); 
+       -moz-transform: translate(0, -100%);  
+       -moz-transform: translate(0, -100%);  
+        -ms-transform: translate(0, -100%); 
+            transform: translate(0, -100%);
+    opacity: .3; 
 }
 #page_2 > .bg {
 	background: url("../images/p2_bg.jpg");
@@ -226,11 +231,18 @@ html, body {
 /* 第三页*/
 #page_3 {
 	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+    	-ms-transition: .5s;
+       	 -o-transition: .5s;
+    		transition: .5s;
+}
+#page_3.feadin{
+    -webkit-transform: translate(0, -100%); 
+  	    -ms-transform: translate(0, -100%); 
+  	   -moz-transform: translate(0, -100%);  
+  	   -moz-transform: translate(0, -100%);  
+  	        transform: translate(0, -100%);
 }
 #page_3 > .bg {
 	background: url("../images/p3_bg.jpg");
